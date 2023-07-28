@@ -6,22 +6,22 @@ import org.junit.runner.RunWith;
 
 @RunWith(SerenityRunner.class)
 public class Identification {
-    private String fullName, placeOfOrigin, placeOfResidence, dateOfBirth, dateOfExpiry, gender;
+    private String firstName, lastName, placeOfOrigin, placeOfResidence, dateOfBirth, dateOfExpiry;
     private Number idNumber;
 
 
-    public Identification(String fullName, String gender){
-        this.fullName = fullName;
-        this.gender = gender;
+    public Identification(String firstName, String lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
+    public String getFirstName() {
 
-    public String getFullName() {
-        return fullName;
+        return firstName;
     }
+    public String getLastName() {
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+        return lastName;
     }
 
     public String getPlaceOfOrigin() {
