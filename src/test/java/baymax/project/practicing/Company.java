@@ -13,7 +13,6 @@ public class Company {
         company.setCountry("Vietnam");
         company.setYearOfBuild(2000);
         company.setService("Transportation");
-
         System.out.println("Company name: " + company.getCompanyName());
         System.out.println("Country: " + company.getCountry());
         System.out.println("Year of build: " + company.getYearOfBuild());
