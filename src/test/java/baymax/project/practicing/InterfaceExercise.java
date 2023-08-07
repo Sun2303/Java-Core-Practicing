@@ -1,6 +1,6 @@
 package baymax.project.practicing;
 
-public class InterfaceExample {
+public class InterfaceExercise {
     // Interface
     interface Animal {
         public void animalSound(); // interface method (does not have a body)
