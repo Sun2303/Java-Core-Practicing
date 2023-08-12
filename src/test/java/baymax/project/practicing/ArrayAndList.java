@@ -1,5 +1,6 @@
 package baymax.project.practicing;
 
+import baymax.project.product_management.CoffeeShopManagementTest;
 import lombok.Getter;
 import org.apache.commons.lang3.RandomStringUtils;
 

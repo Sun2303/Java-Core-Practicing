@@ -23,7 +23,7 @@ public class HowToCreatAList {
 
         //Arrays.asList()
         List fields = Arrays.asList("IT", "Service", "Logistic", "Food & Beverage", "Name01");
-        System.out.println(fields);
+        System.out.println("Arrays.asList: "+ fields);
 
         //List.of() - java 9+
         List dataTypeList = List.of("String", "Number", "Integer", "Double");

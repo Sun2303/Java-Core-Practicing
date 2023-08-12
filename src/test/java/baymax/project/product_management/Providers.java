@@ -1,15 +1,16 @@
 package baymax.project.product_management;
 
-import com.google.inject.util.Providers;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-import java.util.ArrayList;
+
 import java.util.List;
 
 @Setter
 @Getter
+@Data
 
-public class Provider {
+public class Providers {
     private String brandName;
     private String location;
 
@@ -17,7 +18,7 @@ public class Provider {
 
     private boolean isDoorToDoor;
 
-    public Provider(String brandName, String location, String businessType, boolean isDoorToDoor) {
+    public Providers(String brandName, String location, String businessType, boolean isDoorToDoor) {
         this.brandName = brandName;
         this.location = location;
         this.businessType = businessType;
@@ -25,13 +26,14 @@ public class Provider {
     }
 
 
-    public static int getTheAmoutOfProviderInHCM(List<Provider> providers) {
+    public static int getTheAmoutOfProviderInHCM(List<Providers> providers) {
         int countProvider = 0;
-        for (Provider provider : providers) {
+        for (Providers provider : providers) {
             if ("HCMC".equals(provider.getLocation())) {
                 countProvider++;
             }
         }
         return countProvider;
     }
+
 }
