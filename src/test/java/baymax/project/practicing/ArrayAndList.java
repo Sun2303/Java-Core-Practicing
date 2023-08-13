@@ -1,12 +1,6 @@
 package baymax.project.practicing;
 
-import baymax.project.product_management.CoffeeShopManagementTest;
-import lombok.Getter;
 import org.apache.commons.lang3.RandomStringUtils;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 public class ArrayAndList {
     public static void main(String[] args) {
