@@ -4,8 +4,6 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-
 @Setter
 @Getter
 @Data
@@ -13,27 +11,17 @@ import java.util.List;
 public class Providers {
     private String brandName;
     private String location;
+    private int quantity;
 
-    private String businessType;
+    private String category;
 
-    private boolean isDoorToDoor;
 
-    public Providers(String brandName, String location, String businessType, boolean isDoorToDoor) {
+    public Providers(String brandName, String location, String category, int quantity) {
         this.brandName = brandName;
         this.location = location;
-        this.businessType = businessType;
-        this.isDoorToDoor = isDoorToDoor;
+        this.category = category;
+        this.quantity = quantity;
     }
 
-
-    public static int getTheAmoutOfProviderInHCM(List<Providers> providers) {
-        int countProvider = 0;
-        for (Providers provider : providers) {
-            if ("HCMC".equals(provider.getLocation())) {
-                countProvider++;
-            }
-        }
-        return countProvider;
-    }
 
 }

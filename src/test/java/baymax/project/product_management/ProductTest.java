@@ -4,28 +4,25 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.List;
-
 import static org.hamcrest.CoreMatchers.hasItems;
 import static org.hamcrest.CoreMatchers.not;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class MenuTest {
-    CoffeeItems menu = new CoffeeItems();
-    private Menu espresso, latte, cappuccino, blackCoffee, sigTea;
-    private Menu coffeeBlended, summerTea, pinkyTea;
+public class ProductTest {
+    InventoryManagement menu = new InventoryManagement();
+    private Product espresso, latte, cappuccino, blackCoffee, sigTea;
+    private Product coffeeBlended, summerTea, pinkyTea;
 
     @Before
     public void setUp() {
-        espresso = new Menu("Espresso", 10.00);
-        latte = new Menu("Latte", 12.00);
-        cappuccino = new Menu("Cappuccino", 12.00);
-        blackCoffee = new Menu("Black Coffee", 10.00);
-        coffeeBlended = new Menu("Summer Coffee", 50.00);
-        summerTea = new Menu("Summer Tea", 39.00);
-        pinkyTea = new Menu("Pinky Tea", 39.00);
-        sigTea = new Menu ("Signatural Drinks", 49.00);
+        espresso = new Product("Espresso", 10.00);
+        latte = new Product("Latte", 12.00);
+        cappuccino = new Product("Cappuccino", 12.00);
+        blackCoffee = new Product("Black Coffee", 10.00);
+        coffeeBlended = new Product("Summer Coffee", 50.00);
+        summerTea = new Product("Summer Tea", 39.00);
+        pinkyTea = new Product("Pinky Tea", 39.00);
+        sigTea = new Product("Signatural Drinks", 49.00);
         menu.add(espresso,latte,cappuccino,blackCoffee,coffeeBlended,summerTea,pinkyTea);
     }
 

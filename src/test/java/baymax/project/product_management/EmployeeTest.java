@@ -12,11 +12,11 @@ public class EmployeeTest {
     private List<Employees> employeeList;
     @Before
     public void setUp() {
-        employee01 = new Employees("Sun Beo", "Supervisor", 02, 35);
-        employee02 = new Employees("Tran Tuan", "Waiter", 01, 20);
-        employee03 = new Employees("Nguyen Minh", "Waiter", 01, 20);
-        employee04 = new Employees("Le Hieu", "Cashier", 03, 35);
-        employee05 = new Employees("Le Hoang", "Warehouse Manager", 03, 40);
+        employee01 = new Employees("Sun Beo", "Supervisor", 1995, 35);
+        employee02 = new Employees("Tran Tuan", "Waiter", 2000, 20);
+        employee03 = new Employees("Nguyen Minh", "Waiter", 1998, 20);
+        employee04 = new Employees("Le Hieu", "Cashier", 1992, 35);
+        employee05 = new Employees("Le Hoang", "Warehouse Manager", 1991, 40);
         employeeList = Arrays.asList(employee01, employee02, employee03, employee04, employee05);
     }
 
