@@ -2,7 +2,7 @@ package javacore.switchcase;
 
 import java.util.Scanner;
 
-public class Exercise02 {
+public class Gender {
     // Write a program to read gender(M/F) and print the corresponding gender using a switch statement
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

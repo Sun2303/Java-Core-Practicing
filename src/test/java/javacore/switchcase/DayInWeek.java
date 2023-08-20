@@ -2,7 +2,7 @@ package javacore.switchcase;
 
 import java.util.Scanner;
 
-public class Exercise01 {
+public class DayInWeek {
     public static void main(String[] args) {
         //1. Write a program to read a weekday number and print weekday name using switch statement
         Scanner input = new Scanner(System.in);
