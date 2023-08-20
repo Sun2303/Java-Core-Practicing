@@ -7,7 +7,7 @@ public class NumberOfDayInAMonth {
         //Write a program to Find the number of days in a month using a switch statement
         Scanner input = new Scanner(System.in);
         int month;
-        System.out.print("Please input a month to check the number of days: ");
+        System.out.print("Please input a month to SumValuesOfArray the number of days: ");
         month = input.nextInt();
         switch (month) {
             case 1:
