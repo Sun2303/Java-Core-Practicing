@@ -8,7 +8,7 @@ public class ReverseStringAndChar2 {
             result[i] = name.charAt(i);
         }
         System.out.println(result);
-        for(int j = result.length-1; j>=0;j--){
+        for (int j = result.length - 1; j >= 0; j--) {
             System.out.print(result[j]);
         }
     }
